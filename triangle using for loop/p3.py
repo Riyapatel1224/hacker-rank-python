@@ -1,9 +1,4 @@
-n=5
-#handles number of rows
-for i in range(n):
-    #handles number of columns
-    for j in range(i+1):
-        #print *
-        print("*",end="")
-    #ending line after each row
-    print("\r")
+height=int(input("Enter height you want: "))
+for row in range(1, height+ 1):
+	print(" " * (height - row) +"*" * row)
+
